@@ -11,28 +11,44 @@ We want to add some functionality to the buttons on this page. When pressing a b
   3: Use the two functions in the event listeners of the buttons to color in the box when the button is clicked.
 */
 
+
+const removeAllColors = () => {
+  return box.classList.remove("gray", "red", "blue", "green")
+
+}
+const addColor = (color) => {
+  return box.classList.add(color)
+}
+
+
 redButton.addEventListener("click", () => {
   // use your functions to
   // - remove all classes
+  removeAllColors()
   // - then add the class name: "red"
+  addColor("red")
 });
 
 blueButton.addEventListener("click", () => {
   // use your functions to
   // - remove all classes
+  removeAllColors()
   // - then add the class name: "blue"
+  addColor("blue")
 });
 
 greenButton.addEventListener("click", () => {
   // use your functions to
   // - remove all classes
+  removeAllColors()
   // - then add the class name: "green"
+  addColor("green")
 });
 
 grayButton.addEventListener("click", () => {
   // use your functions to
   // - remove all classes
+  removeAllColors()
   // - then add the class name: "gray"
+  addColor("gray")
 });
-
-// Write your two functions below:

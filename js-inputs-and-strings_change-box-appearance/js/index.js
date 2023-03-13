@@ -24,3 +24,18 @@ const radiusInput = document.querySelector('[data-js="input-radius"]')
 const rotationInput = document.querySelector('[data-js="input-rotation"]')
 
 
+
+colorInput.addEventListener("input", () => {
+    console.log(colorInput.value)
+    boxElement.style.background = "hsl(" + colorInput.value +  ", 70%, 60%)"
+    // "#" + colorInput.value
+})
+
+radiusInput.addEventListener("input", () => {
+    console.log(radiusInput.value)
+    boxElement.style.borderRadius = (radiusInput.value * 2) + "px"
+})
+
+rotationInput.addEventListener("input", () => {
+    boxElement.style.transform = "rotateZ(" + rotationInput.value + "deg)"
+})

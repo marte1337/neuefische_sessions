@@ -20,21 +20,56 @@
         <fieldset>
           <legend>Enter your information</legend>
 
-          <!-- Email: label & input -->
+          <label for="email-address">Email address</label>
+          <input type="email" name="email-address" id="email-address" />
 
-          <!-- Date: label & input -->
+          <label for="date-of-birth">Date of birth</label>
+          <input type="date" name="date-of-birth" id="date-of-birth" />
 
           <fieldset class="radio-options">
             <legend>Which one of these animals would you like to visit?</legend>
 
-            <!-- Radio Buttons: labels & inputs -->
+            <input
+              type="radio"
+              name="animal"
+              id="animal-sloths"
+              value="sloths"
+            />
+            <label for="animal-sloths">relaxed sloths</label>
+
+            <input
+              type="radio"
+              name="animal"
+              id="animal-kangaroos"
+              value="kangaroos"
+            />
+            <label for="animal-kangaroos">jumpy kangaroos</label>
+
+            <input
+              type="radio"
+              name="animal"
+              id="animal-racoons"
+              value="racoons"
+            />
+            <label for="animal-racoons">thieving racoons</label>
           </fieldset>
 
-          <!-- Textarea: label & input -->
+          <label for="concerns-message">Any Concerns?</label>
+          <textarea name="concerns-message" id="concerns-message" placeholder="..." rows="7"></textarea>
 
-          <!-- Two Checkboxes: labels & inputs -->
+          <label for="accept-data-privacy">
+            <input type="checkbox" name="accept-data-privacy" id="accept-data-privacy" />
+             I accept the data privacy agreement</label>
 
-          <!-- Two Buttons: reset & submit -->
+          <label for="accept-newsletter">
+            <input
+            type="checkbox"
+            name="accept-newsletter"
+            id="accept-newsletter"/>
+           Receive newsletter</label>
+
+          <button type="reset">Reset all fields</button>
+          <button type="submit">Send</button>
         </fieldset>
       </form>
     </section>
